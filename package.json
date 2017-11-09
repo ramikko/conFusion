@@ -1,8 +1,8 @@
 {
-  "name": "confusion",
+  "name": "ryan",
   "version": "1.0.0",
   "description": "This is a website for Ristorante Con Fusion",
-  "main": "index.html",
+  "main": "aboutus.html",
   "scripts": {
     "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,9 +11,27 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "lite-server": "^2.2.2"
+    "lite-server": "^2.3.0"
   },
   "dependencies": {
     "bootstrap": "^4.0.0-alpha.6"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ramikko/conFusion.git"
+  },
+  "keywords": [
+    "This",
+    "is",
+    "a",
+    "website",
+    "for",
+    "Ristorante",
+    "Con",
+    "Fusion"
+  ],
+  "bugs": {
+    "url": "https://github.com/ramikko/conFusion/issues"
+  },
+  "homepage": "https://github.com/ramikko/conFusion#readme"
 }
