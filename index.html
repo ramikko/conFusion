@@ -30,8 +30,9 @@
                             <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                         </ul>  
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
-                        <span class="fa fa-sign-in"></span> Login</a>
+                	<a class="btn" id="loginButton">
+                    <span id="login-button-icon" class="fa fa-sign-in">Login</span>
+                    </a>
                 </span>         
              </div>   
         </div>
@@ -143,7 +144,7 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                  <div class="form-group col-12 col-sm-3 align-self-center">
-                    <a class="btn btn-warning btn-block" data-toggle="modal" data-target="#reserveModal">Reserve Table</a>
+                    <a class="btn btn-warning btn-block" id="reserveButton">Reserve Table</a>
                 </div>
             </div>
 
@@ -313,7 +314,7 @@
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
         <script>
-	          $("#carouselButton").click(function(){
+	        $("#carouselButton").click(function(){
                 if ($("#carouselButton").children("span").hasClass('fa-pause')) {
                     $("#mycarousel").carousel('pause');
                     $("#carouselButton").children("span").removeClass('fa-pause');
@@ -324,8 +325,22 @@
                     $("#carouselButton").children("span").removeClass('fa-play');
                     $("#carouselButton").children("span").addClass('fa-pause');                    
                 }
-            	});
+            });
+
+            
+            $("#loginButton").click(function(){
+                    $("#loginModal").modal("show");
+                });
+                
+            $("#reserveButton").click(function(){
+                    $("#reserveModal").modal("show");
+                });  
+
+
+
+
     	</script>
+
         
 </body>
 
